@@ -1,0 +1,47 @@
+{
+    "id": "displayrequests",
+    "schemaVersion": "1.0.0",
+    "name": "displayRequests",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "mis_peticiones",
+            "type": "collection",
+            "title": "Mis Peticiones",
+            "addEnabled": false,
+            "deleteEnabled": false,
+            "value": "${context.EmpEmployment.d.results}",
+            "content": [
+                {
+                    "id": "id",
+                    "type": "string",
+                    "label": "ID",
+                    "readOnly": true,
+                    "value": "${item.personIdExternal}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "creado_el_",
+                    "type": "string",
+                    "label": "Creado por",
+                    "readOnly": true,
+                    "value": "${item.createdBy}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "aceptar",
+            "text": "Aceptar",
+            "decisionType": "positive"
+        }
+    ]
+}
