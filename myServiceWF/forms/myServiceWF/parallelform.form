@@ -1,0 +1,21 @@
+{
+    "id": "parallelform",
+    "schemaVersion": "1.0.0",
+    "name": "parallelform",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [],
+    "decisions": [
+        {
+            "id": "aceptar",
+            "text": "Aceptar",
+            "decisionType": "positive"
+        },
+        {
+            "id": "rechazar",
+            "text": "Rechazar",
+            "decisionType": "negative"
+        }
+    ]
+}

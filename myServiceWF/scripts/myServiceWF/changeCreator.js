@@ -4,6 +4,8 @@ for (var i = 0; i < $.context.EmpEmployment.d.results.length; i++) {
     if (i === 0) {
         $.context.EmpEmployment.d.results[i].createdBy = "Conchita Brust";
     }else{
-        $.context.EmpEmployment.d.results[i].createdBy = "Rocío Jurado"
+        $.context.EmpEmployment.d.results[i].createdBy = "Rocío Jurado";
     }
 }
+
+$.context.user = "sara.lannisport@gmail.com";
